@@ -6,8 +6,52 @@
   <base href="/">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="icon" type="image/x-icon" href="favicon.ico">
+  <link href="/your-path-to-uicons/css/uicons-[your-style].css" rel="stylesheet"> 
 </head>
 <body>
   <app-root></app-root>
+  <script>
+    document.addEventListener("DOMContentLoaded", function() {
+      const appBar = document.querySelector('.appBar');
+      let lastScrollTop = 0;
+  
+      window.addEventListener('scroll', function() {
+        let scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+  
+        if (scrollTop > lastScrollTop) {
+          appBar.classList.add('hidden');
+          appBar.classList.remove('visible');
+        } else {
+          appBar.classList.add('visible');
+          appBar.classList.remove('hidden');
+        }
+  
+        lastScrollTop = scrollTop <= 0 ? 0 : scrollTop; // Avoid negative scroll values
+      });
+    });
+  </script>
+<script type="module">
+  // Import the functions you need from the SDKs you need
+  import { initializeApp } from "https://www.gstatic.com/firebasejs/10.12.2/firebase-app.js";
+  import { getAnalytics } from "https://www.gstatic.com/firebasejs/10.12.2/firebase-analytics.js";
+  // TODO: Add SDKs for Firebase products that you want to use
+  // https://firebase.google.com/docs/web/setup#available-libraries
+
+  // Your web app's Firebase configuration
+  // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+  const firebaseConfig = {
+    apiKey: "AIzaSyCbqrZIYmweLVlo9P0X2Yg5k7BiQu5ZP6U",
+    authDomain: "malak-f09cb.firebaseapp.com",
+    projectId: "malak-f09cb",
+    storageBucket: "malak-f09cb.appspot.com",
+    messagingSenderId: "576960825797",
+    appId: "1:576960825797:web:fe1776b7699f664b8663ac",
+    measurementId: "G-L63R7ZVQ9Q"
+  };
+
+  // Initialize Firebase
+  const app = initializeApp(firebaseConfig);
+  const analytics = getAnalytics(app);
+</script>
 </body>
 </html>

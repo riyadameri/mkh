@@ -1,0 +1,98 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f8f9fa;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  margin-top: 100px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.maintitle {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  color: rgb(189, 129, 50);
+  font-size: 40px;
+  margin-bottom: 20px;
+}
+
+.title {
+  padding: 20px;
+  border-radius: 12px;
+}
+
+.malakinfo {
+  display: flex;
+  align-items: flex-start;
+  max-width: 800px;
+  background-color: #ffffff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+.malakimg {
+  padding: 20px;
+  background-color: #fcfcfc;
+  margin-right: 40px;
+  border-radius: 30px;
+  display: flex;
+  align-items: center;
+}
+
+.malakimo {
+  border-radius: 30px;
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+}
+
+.malakeabout {
+  padding: 20px;
+}
+
+.malakeabout h1 {
+  margin: 0;
+  color: #333;
+}
+
+.malakeabout h3 {
+  margin-top: 5px;
+  color: #777;
+}
+
+.bio {
+  margin-top: 10px;
+  font-size: 16px;
+  color: #555;
+  line-height: 1.5;
+}
+
+.contt {
+  display: flex;
+  flex-direction: column;
+  margin-top: 20px;
+}
+
+.singlemn {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.menn {
+  width: 32px;
+  height: 32px;
+  margin-right: 10px;
+}
+
+.inf {
+  margin: 0;
+  font-size: 16px;
+  color: #333;
+}
